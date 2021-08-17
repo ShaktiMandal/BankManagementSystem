@@ -1,0 +1,85 @@
+<div class="container-lg bg-light py-5">
+    <div class="row min-vh-100 align-items-center align-content-center">
+        <div class="col-md-6 mb-2">
+            <div class="avatar-img p-5 d-flex border-dark rounded-circle align-items-center align-content-center justify-content-center">
+                <img src="../../../assets/Images/unnamed.jpg" class="w-50 h-50 rounded-circle"  alt="avatar img">
+                
+            </div>
+        </div>
+        <div class="col-md-6 order-md-first text-center">
+            <div class="hone-text">
+                <p class="text-muted fw-bold fs-4 text-decoration-underline">Account Info</p>
+                <h2 class="text-danger">Shakti Shankar Mandal </h2>
+                <div class="row gx-5 mb-2 d-flex align-items-center align-content-center justify-content-center">
+                   
+                    <div class="col-md-2 rounded-circle p-2">
+                        <!-- <img src="../../../assets/Images/smartphone.png" style="width: 30px; height: 30px;"  alt="avatar img"> -->
+                      <fa-icon style="font-size: 30px; color: black;" [icon] = "contactIcon"></fa-icon>
+                    </div>
+                    <div class="col-md-2 text-nowrap">{{accountDetails.phonenumber}}</div>
+                </div>    
+                <div class="row gx-2 mb-2 d-flex align-items-center align-content-center justify-content-center">
+                
+                    <div class="col-md-2  rounded-circle p-2">
+                        <!-- <img src="../../../assets/Images/gmail.png"  style="width: 30px; height: 30px;"  alt="avatar img"> -->
+                        <fa-icon style="font-size: 30px; color: red;" [icon] = "emailIcon"></fa-icon>
+                    </div>   
+                   
+                    <div class="col-md-2 text-nowrap">{{accountDetails.email}}</div>
+                </div>    
+                <div class="row gx-2 mb-2  d-flex align-items-center align-content-center justify-content-center">
+                 
+                    <div class="col-md-2  rounded-circle p-2">
+                        <img src="../../../assets/Images/account.png" style="width: 30px; height: 30px;"  alt="avatar img">
+                    </div>   
+                   
+                    <div class="col-md-2 text-nowrap">{{accountDetails.customerId}}</div>
+                </div>    
+                <div class="row gx-2 mb-2  d-flex align-items-center align-content-center justify-content-center">
+                   
+                    <div class="col-md-2  rounded-circle p-2">
+                        <img src="../../../assets/Images/account.png" style="width: 30px; height: 30px;"  alt="avatar img">
+                    </div>  
+                    
+                    <div class="col-md-2 text-nowrap">{{accountDetails.accountType}} Account</div>
+                </div>    
+                
+                <div class="row gx-2 mb-2  d-flex align-items-center align-content-center justify-content-center">
+                    <div class="col-md-2  rounded-circle p-2">
+                        <!-- <img src="../../../assets/Images/money-bag.png" style="width: 30px; height: 30px;"  alt="avatar img"> -->
+                        <fa-icon style="font-size: 30px; color: black;" [icon] = "currency"></fa-icon>
+                    </div>   
+                    
+                    <div class="col-md-2 text-nowrap">{{accountDetails.amount}} </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg bg-white py-5">
+   <div class="row py-4 justify-content-center">
+       <div class="col-lg-8">
+           <div class="section-title text-center">
+               <h2 class="fw-bold mb-5">Customer Loan</h2>
+           </div>
+       </div>
+   </div>
+   <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <ng-container  *ngIf="numbers.length > 0; else noLoanFound">
+                <ul class="list-group">             
+                    <li class="list-group-item" *ngFor="let num of numbers">                   
+                        <div class="row">
+                            <div class="col-sm-4">{{num.loanId}}</div>
+                            <div class="col-sm-4">{{num.loanType}}</div>
+                            <div class="col-sm-4">{{num.loanAmount}}</div>
+                        </div>            
+                    </li>
+                </ul>
+            </ng-container>           
+            <ng-template #noLoanFound>
+                <h3 class="text-muted fs-4 text-center">The is no loan for this customer, please apply loan</h3>
+            </ng-template>
+        </div>
+   </div>
+</div>

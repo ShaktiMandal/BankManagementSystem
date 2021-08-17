@@ -1,0 +1,29 @@
+export default interface CustomerDetailsModel{
+    id: string;
+    customerId: string,
+    name: string;
+    userName: string;
+    userPassword: string,
+    userEmail: string,
+    userMobile: string;
+    userDOB: string;
+    userAddress: string;
+    userState: string;
+    userCountry: string;
+    userCitizenship: string;
+    userCitizenStatus: string;
+    userGender: string;
+    userDocProof: string;
+    userDocNo: string;
+    userAccountType: string;
+    userBranchNamne: string;
+    userDepositAmount: string;
+    userRegDate: string;
+    userRefAccHolderName: string;
+    userAccHolderAddress: string;
+    userAccHolderNo: string;
+    userGuardianType: string;
+    userGuardianName: string;
+    userMaritalStatus: string;
+    updateCustomerError: string;
+}

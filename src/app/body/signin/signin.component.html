@@ -1,0 +1,51 @@
+<div class="signin-container container-fluid">
+    <section>
+        <div class="imgBox">
+            <img src="../../../assets/Images/dmitry-demidko-z4VuRg-ZOEg-unsplash.jpg">
+        </div>
+        <div class="contentBox">
+            <div class="fromBox">
+                <div class="text-center text-danger fw-bold fs-5 py-2">{{serverError}}</div>
+                <h2>Log  In</h2>
+                <form [formGroup]="signInForm" (ngSubmit)="OnSignIn()">
+                    <div class="inputbox">
+                        <span>Email</span>
+                        <input
+                        [ngClass] = "DisplayErrorClass('userEmail')"
+                        autocomplete="off"
+                        formControlName="userEmail"
+                        type="email" 
+                        name="userEmail" 
+                        id= "userEmail">
+                        <app-error-component-template 
+                        [displayError]= "IsAValidField('userEmail')"
+                        errorMessage="{{invalidFieldErrorMsg}}">
+                        </app-error-component-template>
+                    </div>
+                    <div class="inputbox">
+                        <span>Password</span>
+                        <input 
+                        [ngClass] = "DisplayErrorClass('userPassword')"
+                        formControlName="userPassword"
+                        type="password"
+                        name="userPassword" 
+                        id="userPassword">
+                        <app-error-component-template 
+                        [displayError]= "IsAValidField('userPassword')" 
+                        errorMessage="{{invalidFieldErrorMsg}}">
+                        </app-error-component-template>
+                    </div>
+                    <div class="inputbox">
+                        <p>Forgot password ? <a routerLink ="/resetpassword">Reset Here</a></p>
+                    </div>
+                    <div class="inputbox">
+                        <p>New Here ? <a routerLink ="/signup">Create Account</a></p>
+                    </div>
+                    <div class="inputbox">
+                        <input type="submit" name="userSubmitBtn" id="userSubmitBtn" value="Sign in">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>

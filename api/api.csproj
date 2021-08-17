@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore" Version="5.0.8" />
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="5.0.8">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="microsoft.entityframeworkcore.sqlite" Version="5.0.8" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlServer" Version="5.0.8" />
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver.design" Version="1.1.6" />
+    <PackageReference Include="mongodb.driver" Version="2.13.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>

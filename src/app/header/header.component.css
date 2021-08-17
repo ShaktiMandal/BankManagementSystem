@@ -1,0 +1,144 @@
+.navbar
+{
+    width:100%; 
+    padding: 30px 0px 20px 10px;
+    z-index: 10;
+    
+}
+
+.navbar-brand
+{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.navbar-dark .navbar-brand{
+    color: #dcdde1;
+}
+
+.nav-item{
+    font-weight:600;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.nav
+{
+    list-style: none;    
+}
+
+.navbar-nav li
+{
+    padding: 10px;
+    
+}
+
+.navbar-nav li a{
+
+    text-decoration: none;
+    background: #ff4584;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight:500;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 35px;
+   
+}
+.navbar-nav li a:hover{  
+    background: #f53677;   
+}
+
+.toggle-button
+{
+    border: none;
+}
+
+.toggle-button:focus
+{
+    border: 1px solid #332424c4;
+    box-shadow: none;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    display: none;
+}
+
+@media (min-width: 990px)
+{
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    } 
+}
+
+
+@media (max-width: 990px)
+{
+    .navbar-expand-lg .navbar-toggler {
+        cursor: pointer;
+        display:block;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+
+    .navbar{
+        width: 97%
+    }
+
+    .navbar-nav
+    {       
+        background: rgb(250 250 250 / 90%);
+        left: 10px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .navbar-nav li a{
+        background: transparent;      
+        outline: none;
+        border: none;   
+        cursor: pointer;
+        padding: 10px;
+        color: #607d8b;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration:uppercase;       
+    }
+
+    .navbar-nav li a:hover{  
+        background:transparent;
+        color: #5a7886;   
+    }
+}
+
+@media (max-width: 755px)
+{   
+    .navbar-nav
+    {       
+        background: rgb(250 250 250 / 90%);
+        left: 10px;
+        width: 100%;
+        position: absolute;
+    }
+
+    .navbar-nav li a{
+        background: transparent;      
+        outline: none;
+        border: none;   
+        cursor: pointer;
+        padding: 10px;
+        color: #607d8b;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-decoration:uppercase;       
+    }
+
+    .navbar-nav li a:hover{  
+        background:transparent;
+        color: #5a7886;   
+    }
+}

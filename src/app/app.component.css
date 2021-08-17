@@ -1,0 +1,17 @@
+.header-custom-style
+{
+    width: 100%;
+    position: absolute;
+}
+
+.row
+{
+    padding: 0;
+    margin: 0;;
+}
+
+.test
+{
+    height:100%;
+    background-color: black;
+}

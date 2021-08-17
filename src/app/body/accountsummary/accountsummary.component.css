@@ -1,0 +1,249 @@
+section{
+    position:relative;
+    width:100%;
+    height: 100vh;
+    display: flex;
+}
+section .imgBox
+{
+    position:relative;
+    padding: 3rem 0;
+    width: 50%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cutomer-summary-area
+{
+    margin:20px;
+    width: 100%;
+    background-color:#ECEFF1;
+    display: grid;    
+    grid-template-columns: 30% 60% 10%;
+}
+
+.customer-area
+{
+    display:grid;
+    border-radius: 25px 0 0 25px;
+    background-color: #0485db;
+    grid-template-rows: 30% 70%;
+}
+.account-details
+{
+    height: 450px;
+    width: 100%;
+}
+
+.avatar-area
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.avatar-area img
+{
+    position: absolute;
+    width: 150px;
+    top: 250px;
+}
+
+.account-details
+{
+    display: flex;
+    flex-direction: column;
+    padding:5px;
+}
+
+.account-details .customer{
+    text-align: center;
+    color: white;
+}
+
+.customer-amount,
+.customer-phone-number,
+.customer-email-id
+{
+    display: flex;
+}
+
+.customer-amount .icon,
+.customer-phone-number .icon,
+.customer-email-id .icon
+{
+    border: 1px solid #0d6efd;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    font-size: 20px;
+    padding: 5px 15px;
+    box-shadow: px 5px;
+    box-shadow: 5px 2px 10px #313131;
+    color: white;
+}
+
+.customer-amount p,
+.customer-phone-number p,
+.customer-email-id p
+{
+    padding: 5px 10px;
+    color: white;
+}
+
+.customer-details
+{
+    height:60%;
+    background-color: #ECEFF1;
+}
+
+.account-details div{
+    margin-bottom: 5px;
+}
+
+.account-area .cutomer-loan
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.account-area .cutomer-loan li
+{
+   width: 100%;
+   background-color: #ECEFF1;
+   color: black;
+   height: 50px;   
+   margin-bottom: 5px;
+}
+
+.account-details-header
+{
+    background-color: #8fa1ad;
+    height: 40%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.account-details-list
+{
+    height: 60%;
+}
+
+.account-details-mobile
+{
+    display: none;
+}
+
+.empty-space
+{
+    height: 30px;
+}
+
+.avatar-area
+{
+    height: 300px;
+    padding:12px;
+    background: #0d6efd;
+}
+
+.contact-details
+{
+    background: #0d6efd;
+    padding:12px;
+}
+
+@media (max-width: 870px)
+{
+    .desktop-version
+    {
+        display: none;
+    }
+    .empty-space
+    {
+        height: 20px;
+    }
+
+    .avatar-area
+    {
+        height:150px;   
+    } 
+
+    .account-details
+    {
+        display: none;
+    }
+
+    .avatar-area img {
+        top: 75px;
+    };
+
+    .account-details-mobile
+    {
+        display: block;
+        background-color: white;
+    }
+
+    .customer-area
+    {       
+        border-radius:   25px 25px 0 0;
+        background-color: #0485db;       
+    }
+
+    .account-details-mobile .row
+    {
+        height: 30%;
+    }
+
+    .account-details-mobile .customer-amount .icon,
+    .account-details-mobile .customer-phone-number .icon,
+    .account-details-mobile .customer-email-id .icon
+    {
+        background-color: #0485db;  
+        color: black  
+    }
+
+    .account-details-mobile .customer-amount p,
+    .account-details-mobile .customer-phone-number p,
+    .account-details-mobile .customer-email-id p
+    {      
+        color: black  
+    }
+}
+
+@media (max-width: 755px)
+{    
+    section .imgBox
+    {
+        position: absolute;
+        top: 0;
+        left: 0;	
+        width: 100%;
+    }
+    
+    section .contentBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        }
+
+        .customer-details div{
+            padding: 5px;
+        }
+
+        .account-details-mobile
+        {
+            display: block;
+            background-color: white;
+        }
+    }
