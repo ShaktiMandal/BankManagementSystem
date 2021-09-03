@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "heroku-postbuild": "set NODE_ENV=production && npm install && npm run build",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -10,6 +11,8 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~12.0.5",
+    "@angular/compiler-cli": "~12.0.5",
     "@angular/animations": "~12.0.5",
     "@angular/common": "~12.0.5",
     "@angular/compiler": "~12.0.5",
@@ -28,7 +31,8 @@
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.2.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.0.5",
